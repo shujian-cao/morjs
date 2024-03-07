@@ -276,6 +276,7 @@ function registerEventLister() {
 
 export function createRouter(config: IRouterConfig, element: HTMLElement) {
   const { router } = config
+  console.error('router', router)
   setRootElement(element)
   setCustomRoutes(router?.customRoutes)
   setBaseName(router?.baseName)
